@@ -1,0 +1,170 @@
+.footer {
+  background-color: #f3f3f5;
+  padding: 30px 60px;
+  font-family: Arial, sans-serif;
+  color: #0c0c27 !important;
+  margin-bottom: 100px;
+}
+.footerdivide{
+  padding: 30px 60px;
+  font-family: Arial, sans-serif;
+  color: #0c0c27 !important;
+  margin-bottom: 100px;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.linksSection {
+  display: flex;
+  gap: 80px;
+  line-height: 13px;
+  color: rgb(5, 5, 128);
+}
+ h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(5, 5, 128);
+}
+
+.linksSection li:hover{
+  text-decoration: brown ;
+  /* border-bottom: 1px solid rgb(5, 5, 128); */
+}
+
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linksSection li {
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.appSection {
+  text-align: center;
+}
+
+.appImages img {
+  width: 100px;
+  margin: 8px;
+}
+
+.paymentImg{
+  width: 50px !important;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  background-color: white;
+  
+}
+
+
+.verified img {
+  width: 70px !important;
+  margin-top: 10px;
+}
+
+
+/* -------------------------
+   Responsive Design Section
+----------------------------*/
+
+@media (max-width: 992px) {
+  .linksSection {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .appImages img {
+    width: 80px;
+  }
+
+  .paymentImg {
+    width: 40px !important;
+  }
+
+  .verified img {
+    width: 60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer, .footerdivide {
+    padding: 20px 30px;
+    margin-bottom: 80px;
+  }
+
+  .topSection {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .bottomSection {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .appSection {
+    text-align: left;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .linksSection li {
+    font-size: 13px;
+  }
+
+  .appImages img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer, .footerdivide {
+    padding: 15px 20px;
+    margin-bottom: 60px;
+  }
+
+  .linksSection {
+    gap: 20px;
+  }
+
+  .appImages img {
+    width: 60px;
+    margin: 5px;
+  }
+
+  .paymentImg {
+    width: 35px !important;
+  }
+
+  .verified img {
+    width: 50px !important;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  .linksSection li {
+    font-size: 12px;
+  }
+}

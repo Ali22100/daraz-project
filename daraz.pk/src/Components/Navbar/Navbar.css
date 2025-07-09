@@ -1,0 +1,115 @@
+/* Navbar container and background */
+.daraz-navbar {
+  background-color: #F85606;
+  padding: 10px 0;
+}
+
+/* Keep everything in one line and responsive */
+.daraz-container {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+/* Responsive logo */
+.daraz-logo {
+  height: 40px;
+  width: auto;
+  margin-left: 50px;
+  max-width: 100px;
+  transition: all 0.3s ease;
+}
+
+/* Logo spacing */
+.logo-wrapper {
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+/* Search bar with flex shrink and full responsiveness */
+.daraz-search {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+
+/* Search input field */
+.search-input {
+  flex: 1;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* Search button */
+.search-btn {
+  background-color: #fcd2b5;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: #F85606;
+  padding: 0 18px;
+}
+
+.search-btn:hover {
+  background-color: #f5c2a0;
+}
+
+/* Cart icon */
+.cart-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.cart-icon-img {
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* ---------- Responsive Scaling ---------- */
+
+@media (max-width: 768px) {
+  .daraz-logo {
+    max-width: 80px;
+    height: 32px;
+  }
+
+  .search-input {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .search-btn {
+    padding: 0 14px;
+  }
+
+  .cart-icon-img {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .daraz-logo {
+    max-width: 70px;
+    height: 28px;
+  }
+
+  .search-input {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .search-btn {
+    padding: 0 12px;
+  }
+
+  .cart-icon-img {
+    font-size: 16px;
+  }
+}
